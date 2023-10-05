@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="flex  justify-between items-center h-full px-4 p-6 text-[#000] sticky dark:bg-slate-900 dark:text-white shadow-lg">
+        <h1>Logo</h1>
+        <nav>
+            <ul class="flex gap-6 text-[15px] navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>     
+        </nav>
+        <div id="mobile">
+            <i id="bar" class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="/img/waning-moon.png" class="img cursor-pointer" alt="">
+        <div class="pt-40 flex flex-col justify-center items-center text-[#fff]">
+            <h2 class="text-[25px] mb-4 lg:text-[40px] md:text-[40px]">World's Biggest University</h2>
+            <p class="text-[10px] lg:text-[12px] md:text-[12px] ">"They're bright-eyed, they're curious, they're trying to discover,</p>
+            <p class="text-[10px] lg:text-[12px] md:text-[12px] ">and they're eager to learn.</p>
+            <p class="text-[10px] lg:text-[12px] md:text-[12px]">It's a match made in</p>
+            <p class="text-[10px] lg:text-[12px] md:text-[12px]">heaven"</p>
+            <button class="inline-flex border border-[#EFB443] text-[#fff] text-[14px] mt-5 justify-center items-center gap-1 text-label px-3 py-2 rounded hover:bg-[#EFB443] hover:text-[#fff]">Visit Us to Know More</button>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="text-[25px] text-center mt-20">Courses We Offer</h3>
+        <p class="text-[12px] text-center mt-2 mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="flex justify-center gap-8 max-w-4xl mx-auto mt-20 mb-8 courses">
+            <div class="bg-[#fff3f3] mx-4 p-8 hover:shadow-xl rounded-md my-4">
+                <h5 class="text-[16px] text-center ">Certification</h5>
+                <p class="text-[10px] text-[#777]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+            </div>
+            <div class="bg-[#fff3f3] mx-4 p-8 hover:shadow-xl rounded-md  my-4">
+                <h5 class="text-[16px] text-center">Degree</h5>
+                <p class="text-[10px] text-[#777]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+            </div>
+            <div class="bg-[#fff3f3] mx-4 p-8 hover:shadow-xl rounded-md  my-4">
+                <h5 class="text-[16px] text-center">Post Graduation</h5>
+                <p class="text-[10px] text-[#777]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis molestias iste commodi assumenda, consequuntur dignissimos rerum tempora enim distinctio ratione blanditiis obcaecati consectetur nesciunt, sapiente cupiditate eius illo delectus accusamus!</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="text-[25px] text-center mt-20">Our Facilities</h3>
+    <p class="text-[12px] text-center mt-2 mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <div class="flex justify-between items-center max-w-5xl mx-auto facilities">
+        <div class="mx-2 my-4">
+            <img src="/img/library.png" alt="" class="w-max h-60 rounded-2xl">
+            <h5 class="text-[13px] pt-3">World Class Library</h5>
+            <p class="text-[11px] text-[#777]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
+        </div> 
+        <div class="mx-2  my-4">
+            <img src="/img/basketball.png" alt="" class="w-max h-60 rounded-2xl">
+            <h5 class="text-[13px] pt-3">basketball Court</h5>
+            <p class="text-[11px] text-[#777]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
+        </div>   
+        <div class="mx-2  my-4">
+            <img src="/img/cafeteria.png" alt="" class="w-max h-60 rounded-2xl">
+            <h5 class="text-[13px] pt-3">cafeteria</h5>
+            <p class="text-[11px] text-[#777]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolore voluptatum unde praesentium! Reprehenderit</p>
+        </div>     
+    </div>
+    </section>
+
+    <section class="mini-banner max-w-4xl mx-auto mt-20">
+        <div class="flex flex-col justify-center items-center">
+            <div class="pt-10 text-center text-[#fff]">
+                <h2>Enroll  For Our Various Online Courses</h2>
+                <h2>Anywhere From The World</h2>
+            </div>
+            <button class="inline-flex border border-[#EFB443] text-[#fff] text-[14px] mt-5 justify-center items-center gap-1 text-label px-3 py-2 rounded hover:bg-[#EFB443] hover:text-[#fff]">Visit Us to Know More</button>
+        </div>
+
+    </section>
+
+    <section>
+        <h4 class="text-center text-[15px] mt-20">About Us</h4>
+        <p class="text-center text-[10px] text-[#777]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, possimus iure dolores aperiam numquam voluptatibus at magni rerum,</p>
+        <p class="text-center text-[10px] text-[#777]">consequuntur deserunt blanditiis facere?</p>
+        <div class="icons text-[#EFB443] text-[13px] text-center px-3 py-5">
+            <i class="fa fa-facebook px-2"></i>
+            <i class="fa fa-twitter  px-2"></i>
+            <i class="fa fa-instagram  px-2"></i>
+            <i class="fa fa-linkedin  px-2"></i>
+           </div>
+           <p class="text-center text-[13px]">Made with <i class="fa fa-heart-o  text-[#EFB443] text-[13px]"></i> By Aliyu Mukhtar</p>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

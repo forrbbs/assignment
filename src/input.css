@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.banner{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("/img/banner.png");
+    height: 89vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.mini-banner{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("/img/banner2.jpg");
+    height: 30vh;
+}
+#mobile{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+}
+
+.display-none{
+    @apply hidden;
+}
+
+
+@media(max-width:425px){
+    .courses{
+        flex-direction: column;
+    }
+    .facilities{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:799px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100vh;
+        width: 250px;
+        background-color: #ccc;
+        box-shadow:0 40px 60px rgba(0,0,0, 0.1);
+        padding: 70px 0 0 10px;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+    .navbar li{
+        padding-left: 25px;
+    }
+    .navbar.active{
+        right:0;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    #close{
+        position: absolute;
+        top:20px;
+        left:20px;
+    }
+}
